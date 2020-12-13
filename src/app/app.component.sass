@@ -1,0 +1,47 @@
+.main
+  overflow: auto
+  width: var(--main-width)
+  margin: 20px auto
+  padding: var(--main-padding)
+  background-color: var(--primary-color)
+  box-shadow: var(--light-shadow)
+
+.main__title
+  margin: 0 0 20px 0
+  font-size: 1.2rem
+  text-align: center
+  color: var(--text-color)
+
+.main__content
+  position: relative
+
+.main__input
+  width: 100%
+  height: 40px
+  text-indent: 10px
+  border: 2px solid #ccc
+  border-radius: 2px
+
+  &:focus
+    border: 2px solid #444
+
+.main__spinner
+  position: absolute
+  width: 40px
+  height: 40px
+  right: 0
+  top: 0
+  padding: 5px
+
+.main__output
+  overflow: auto
+  border: 2px solid #ccc
+  border-top: none
+  background-color: var(--primary-color)
+  box-shadow: var(--light-shadow)
+  position: fixed
+  width: calc(var(--main-width) - var(--main-padding) * 2)
+  max-height: 600px // height % 60 === 0
+
+.main__output-user + .main__output-user
+  border-top: 1px solid var(--text-color)
